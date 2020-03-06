@@ -43,7 +43,7 @@ int main(){
 		
 		//cin>>input;
 		getline(cin,input);
-		cout<<"---------------------------------"<<endl;
+		
 		string s;
 		istringstream is(input);
 		string q[5];
@@ -60,7 +60,7 @@ int main(){
 		}
 		
 		if(wow=="grade"){
-			
+			cout<<"---------------------------------"<<endl;
 			for (string::size_type i=0; i<q[1].length(); ++i){
     			lol=lol+toupper(q[1][i],loc);
 		}
@@ -73,8 +73,8 @@ int main(){
 					
 				}
 			}
-			
-		}else if(wow=="name"){
+			cout<<"---------------------------------"<<endl;
+		}else if(wow=="name"){cout<<"---------------------------------"<<endl;
 		for(int t=1;t<u;t++){
 				for (string::size_type i=0; i<q[t].length(); ++i){
     			lol=lol+tolower(q[t][i],loc);
@@ -101,14 +101,14 @@ int main(){
 			}
 			if(namec==0){
 				cout<<"Cannot found.\n";
-			}	
+			}	cout<<"---------------------------------"<<endl;
 		}else if(wow!="exit"){
-			
-			cout<<"Invalid command\n";
+			cout<<"---------------------------------"<<endl;
+			cout<<"Invalid command\n";cout<<"---------------------------------"<<endl;
 		}
 		
 		namec=0;
-		cout<<"---------------------------------"<<endl;
+		
 	}while(wow!="exit");
 	
 }
